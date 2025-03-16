@@ -1,0 +1,14 @@
+sudo apt update 
+sudo apt upgrade
+sudo apt install python3-pip
+pip install --upgrade pip     
+
+Use of a virtualenv is also recommended
+
+pip install virtualenv
+virtualenv myenv
+source myenv/bin/activate
+
+
+Password
+.?G)pwWv86mRKG%=bR8EZwktZB-)lk4!

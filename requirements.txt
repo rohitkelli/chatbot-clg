@@ -1,0 +1,13 @@
+asgiref==3.8.1
+click==8.1.8
+colorama==0.4.6
+joblib==1.4.2
+nltk==3.9.1
+numpy==2.2.3
+regex==2024.11.6
+setuptools==75.8.0
+sqlparse==0.5.3
+tqdm==4.67.1
+tzdata==2025.1
+wheel==0.45.1
+tensorflow

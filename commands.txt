@@ -1,0 +1,27 @@
+
+env=myproj
+
+python3 -m venv env
+source env/bin/activate
+
+sudo apt install nginx
+
+Now go to /etc/nginx/sites-enabled. Inside this folder create a file with name as your Instance public IP address.
+
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name <YOUR INSTANCE IP>;
+        
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        include proxy_params;
+    }
+}
+
+sudo systemctl restart nginx
+sudo systemctl status nginx
+
+
+sudo kill $(sudo lsof -t -i:5000
